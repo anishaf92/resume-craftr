@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPen} from '@fortawesome/free-solid-svg-icons';
 import '../css/profile.css';
 
-const Profile = ({edit, data}) => {
+const Profile = ({edit }) => {
   const [editMode, setEditMode] = useState (edit);
   const profile = useSelector (state => state.profile);
   const [profileData, setProfileData] = useState ({

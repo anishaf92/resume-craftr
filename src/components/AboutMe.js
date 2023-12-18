@@ -6,11 +6,12 @@ import {faPen} from '@fortawesome/free-solid-svg-icons';
 
 const AboutMe = ({edit, data}) => {
   const [editMode, setEditMode] = useState (edit);
-  const [aboutMe, setAboutMe] = useState ({
-    aboutMeText:""
-  });
+  const [aboutMe, setAboutMe] = useState ("");
   const dispatch = useDispatch ();
-  const aboutMeText = useSelector (state => state.aboutMe);
+  const aboutMeText = useSelector (state => state.aboutMe.aboutMe);
+  const useEffect = (() => {
+    setAboutMe(aboutMeText.aboutMe)
+  },[])
   const validate =() =>{
     console.log(aboutMe)
     if(aboutMe === ""){
@@ -21,7 +22,7 @@ const AboutMe = ({edit, data}) => {
 
   const handleSave = () => {
     if(validate()){
-    dispatch (saveAboutMe(aboutMe));
+    dispatch(saveAboutMe(aboutMe));
     setEditMode (false);
     }
     else{
@@ -31,15 +32,14 @@ const AboutMe = ({edit, data}) => {
 
   return (
     <div>
-      {console.log(aboutMeText)}
       {editMode
         ? <div className="container">
             <header>AboutMe</header>
             <div className="input-container">
               <label>Tell us about yourself:</label>
               <textarea
-              value={aboutMe.aboutMeText}
-                onChange={e => setAboutMe({aboutMeText: e.target.value})}
+              value={aboutMe}
+                onChange={e => setAboutMe(e.target.value)}
                 
               />
             </div>
@@ -54,7 +54,7 @@ const AboutMe = ({edit, data}) => {
                 <FontAwesomeIcon icon={faPen} />
               </span>
             </header>
-            <p className="details-display profile">{aboutMeText.aboutMeText}</p>
+            <p className="details-display profile">{aboutMe}</p>
           </div>}
     </div>
   );

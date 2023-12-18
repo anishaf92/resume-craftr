@@ -7,7 +7,7 @@ export const resetAboutMe = () => ({
 });
 
 const aboutMeInitialState = {
-  aboutMeText: '',
+  aboutMe: '',
 };
 
 export const aboutMeReducer = (state = aboutMeInitialState, action) => {
@@ -15,7 +15,7 @@ export const aboutMeReducer = (state = aboutMeInitialState, action) => {
     case SAVE_ABOUT_ME:
       return {
         ...state,
-        ...action.payload,
+        aboutMe: action.payload,
       };
       case 'RESET_ABOUTME':
       return aboutMeInitialState;

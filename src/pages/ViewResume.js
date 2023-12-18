@@ -28,7 +28,7 @@ const ViewResume = (props) => {
       console.log(resumeGlobal)
       if(data.resume !== resumeGlobal){
       dispatch(saveProfile(data.resume.profile));
-      dispatch(saveAboutMe(data.resume.aboutMe.aboutMeText));
+      dispatch(saveAboutMe(data.resume.aboutMe));
       dispatch(saveAcademic(data.resume.academics.academics));
       dispatch(saveExperience(data.resume.experience.experience));
       dispatch(saveProject(data.resume.projects));
@@ -68,7 +68,7 @@ const ViewResume = (props) => {
         try {
           const updatedData = {
             profile: resumeGlobal.profile,
-      aboutMe: resumeGlobal.aboutMe ,
+      aboutMe: resumeGlobal.aboutMe,
       academics: resumeGlobal.academics ,
       experience: resumeGlobal.experience,
       projects: resumeGlobal.projects,

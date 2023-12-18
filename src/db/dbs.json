@@ -3,11 +3,77 @@
     {
       "resume": {
         "profile": {
-          "fullName": "Anisha Fathima",
-          "designation": "Coding teacher",
-          "email": "ani@gmail.com",
+          "fullName": "Mohamed Siddique",
+          "designation": "Manag",
+          "email": "sidm4u@gmail.com",
           "phone": "9894623878",
           "location": "Chennai",
+          "website": ""
+        },
+        "aboutMe": {
+          "aboutMe": "Innovative and hardworking individual with experience in teaching, currently seeking for the role of full stack developer, responsible for designing, developing and testing responsive web applications that meets the client nee"
+        },
+        "academics": {
+          "academics": [
+            {
+              "degree": "BE",
+              "schoolname": "Anna university",
+              "specialization": "EEE",
+              "start": "",
+              "end": "",
+              "description": ""
+            }
+          ]
+        },
+        "experience": {
+          "experience": [
+            {
+              "designation": "Manager",
+              "companyName": "Rudoom",
+              "location": "Muscat",
+              "start": "",
+              "end": "",
+              "description": ""
+            }
+          ]
+        },
+        "projects": {
+          "projects": {
+            "projects": {
+              "projects": {
+                "projects": [
+                  {
+                    "title": "Artify",
+                    "url": "",
+                    "skills": "HTML , CSS , JS",
+                    "start": "",
+                    "end": "",
+                    "description": ""
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "skills": {
+          "skills": [
+            {
+              "skillname": "React js",
+              "rating": "4"
+            }
+          ]
+        }
+      },
+      "id": 2
+    },
+    {
+      "resume": {
+        "profile": {
+          "fullName": "knjmdbv",
+          "designation": "m,x cv",
+          "email": "qmksdhbj",
+          "phone": "098765",
+          "location": "sadknjhbf",
           "website": ""
         },
         "aboutMe": {
@@ -240,99 +306,107 @@
           "226": "d",
           "227": "s",
           "228": ".",
-          "aboutMeText": "Innovative and hardworking individual with experience in teaching, currently seeking for the role of full stack developer, responsible for designing, developing and testing responsive web applications that meets the client needs."
+          "aboutMeText": ""
         },
         "academics": {
-          "academics": [
-            {
-              "degree": "Btech",
-              "schoolname": "SASTRA",
-              "specialization": "CSE",
-              "start": "2009-04-01",
-              "end": "2013-05-04",
-              "description": "Studies DSA , OS , Grid computing and JAVA"
-            },
-            {
-              "degree": "Mtech",
-              "schoolname": "IIM",
-              "specialization": "CSE",
-              "start": "",
-              "end": "",
-              "description": ""
-            }
-          ]
+          "academics": []
         },
         "experience": {
-          "experience": [
-            {
-              "designation": "Teacher",
-              "companyName": "Whitehat Junior",
-              "location": "Remote",
-              "start": "2019-06-12",
-              "end": "2022-05-22",
-              "description": "Mentored students in python , ML and AI"
-            },
-            {
-              "designation": "Associate SE",
-              "companyName": "Accenture",
-              "location": "Chennai",
-              "start": "",
-              "end": "",
-              "description": ""
-            }
-          ]
+          "experience": []
         },
         "projects": {
-          "projects": {
-            "projects": {
-              "projects": [
-                {
-                  "title": "Schoolcool",
-                  "url": "https://app.netlify.com/sites/gentle-snickerdoodle-a87926/overview",
-                  "skills": "React Js, Node js , Mongo DB",
-                  "start": "2023-10-29",
-                  "end": "2023-11-29",
-                  "description": "School Management Web application",
-                  "project": "s"
-                }
-              ]
-            }
-          }
+          "projects": []
         },
         "skills": {
           "skills": [
             {
               "skillname": "React js",
               "rating": "4"
-            },
-            {
-              "skillname": "Node js",
-              "rating": "2"
             }
           ]
         }
       },
-      "id": 1
+      "id": 3
     },
     {
       "resume": {
         "profile": {
-          "fullName": "Mohamed Siddique",
+          "fullName": "Blockq",
+          "designation": "mdenfbgj",
+          "email": "waslkdfnjvf",
+          "phone": "09876",
+          "location": "djnfv",
+          "website": ""
+        },
+        "aboutMe": {
+          "aboutMeText": "",
+          "aboutMe": "Innovative and hardworking individual with experience in teaching, currently seeking for the role of full stack developer, responsible for designing, developing and testing responsive web applications that meets the client needs."
+        },
+        "academics": {
+          "academics": []
+        },
+        "experience": {
+          "experience": []
+        },
+        "projects": {
+          "projects": []
+        },
+        "skills": {
+          "skills": []
+        }
+      },
+      "id": 4
+    },
+    {
+      "resume": {
+        "profile": {
+          "fullName": "bla bla",
+          "designation": "kdmnjgh",
+          "email": "slkdnjfhb",
+          "phone": "098765",
+          "location": "snmdbf",
+          "website": ""
+        },
+        "aboutMe": {
+          "aboutMeText": "",
+          "aboutMe": "jakshgd"
+        },
+        "academics": {
+          "academics": []
+        },
+        "experience": {
+          "experience": []
+        },
+        "projects": {
+          "projects": []
+        },
+        "skills": {
+          "skills": []
+        }
+      },
+      "id": 5
+    },
+    {
+      "resume": {
+        "profile": {
+          "fullName": "Fakkir",
           "designation": "Manager",
-          "email": "sidm4u@gmail.com",
-          "phone": "9894623878",
+          "email": "fakkirmd@gmail.com",
+          "phone": "994577660",
           "location": "Chennai",
           "website": ""
         },
         "aboutMe": {
-          "aboutMeText": "Innovative and hardworking individual with experience in teaching, currently seeking for the role of full stack developer, responsible for designing, developing and testing responsive web applications that meets the client needs."
+          "aboutMe": {
+            "aboutMe": "Enthusiastic individual looking for team management roles"
+          }
         },
         "academics": {
           "academics": [
             {
               "degree": "BE",
-              "schoolname": "Anna university",
-              "specialization": "EEE",
+              "schoolname": "SSN",
+              "specialization": "ECE",
               "start": "",
               "end": "",
               "description": ""
@@ -343,8 +417,8 @@
           "experience": [
             {
               "designation": "Manager",
-              "companyName": "Rudoom",
-              "location": "Muscat",
+              "companyName": "TransUnion",
+              "location": "CHennai",
               "start": "",
               "end": "",
               "description": ""
@@ -352,27 +426,24 @@
           ]
         },
         "projects": {
-          "projects": [
-            {
-              "title": "Artify",
-              "url": "",
-              "skills": "HTML , CSS , JS",
-              "start": "",
-              "end": "",
-              "description": ""
-            }
-          ]
+          "projects": {
+            "projects": []
+          }
         },
         "skills": {
           "skills": [
             {
-              "skillname": "React js",
+              "skillname": "Team Management",
+              "rating": "5"
+            },
+            {
+              "skillname": "Collaboration",
               "rating": "4"
             }
           ]
         }
       },
-      "id": 2
+      "id": 6
     }
   ]
 }
