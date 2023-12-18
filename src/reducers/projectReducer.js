@@ -2,15 +2,21 @@
 const initialState = {
     projects: [],
   };
-  
-  export default function experienceReducer (state = initialState, action) {
+  export const RESET_PROJECT = 'RESET_PROJECT';
+
+export const resetProject= () => ({
+  type: RESET_PROJECT,
+});
+  export default function projectReducer (state = initialState, action) {
     switch (action.type) {
       case 'SAVE_PROJECT':
         return {
           ...state,
-          projects: action.payload,
+          projects : action.payload,
         };
-      // Handle other actions if needed
+        case 'RESET_PROJECT':
+        return initialState;
+        
       default:
         return state;
     }

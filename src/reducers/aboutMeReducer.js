@@ -1,6 +1,10 @@
 const SAVE_ABOUT_ME = 'SAVE_ABOUT_ME';
 
+export const RESET_ABOUTME = 'RESET_ABOUTME';
 
+export const resetAboutMe = () => ({
+  type: RESET_ABOUTME,
+});
 
 const aboutMeInitialState = {
   aboutMeText: '',
@@ -11,8 +15,10 @@ export const aboutMeReducer = (state = aboutMeInitialState, action) => {
     case SAVE_ABOUT_ME:
       return {
         ...state,
-        aboutMeText: action.payload,
+        ...action.payload,
       };
+      case 'RESET_ABOUTME':
+      return aboutMeInitialState;
     default:
       return state;
   }

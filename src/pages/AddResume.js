@@ -8,12 +8,13 @@ import ProfessionalExperience from '../components/ProfessionalExperience';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import '../css/addresume.css';
-import { saveProfile } from "../reducers/profileReducer";
-import { saveAboutMe } from "../reducers/aboutMeReducer";
-import { saveAcademic } from "../reducers/academicReducer";
-import { saveExperience } from "../reducers/experienceReducer";
-import { saveProject } from "../reducers/projectReducer";
-import { saveSkill } from "../reducers/skillReducer";
+import { resetExperience } from '../reducers/experienceReducer';
+import { resetProfile } from "../reducers/profileReducer";
+import { resetAboutMe } from "../reducers/aboutMeReducer";
+import { resetAcademic } from "../reducers/academicReducer";
+import { resetProject } from "../reducers/projectReducer";
+import { resetSkills } from "../reducers/skillReducer";
+
 import {useDispatch} from "react-redux";
 
 const AddResume = props => {
@@ -22,17 +23,12 @@ const AddResume = props => {
   const dispatch = useDispatch();
   useEffect(() => {
     // Dispatch actions to reset each section of the state
-    dispatch(saveProfile({fullName: '',
-    designation: '',
-    email: '',
-    phone: '',
-    location: '',
-    website: '',}));
-    dispatch(saveAboutMe({ aboutMeText: '' }));
-    dispatch(saveAcademic([]));
-    dispatch(saveExperience([]));
-    dispatch(saveProject([]));
-    dispatch(saveSkill([]));
+    dispatch(resetProfile());
+        dispatch(resetAboutMe());
+        dispatch(resetAcademic());
+        dispatch(resetExperience());
+        dispatch(resetProject());
+        dispatch(resetSkills());
   }, [dispatch]);
   const handleSubmit = () => {
 

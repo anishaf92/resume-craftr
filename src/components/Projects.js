@@ -44,15 +44,15 @@ const Projects = ({ edit }) => {
   const handleSave = () => {
       if (editIndex !== null) {
         const updatedProjects = [...projectList];
-        updatedProjects[editIndex] = { ...project };
+        updatedProjects[editIndex] = project;
         setProjectList(updatedProjects);
         setEditMode(false);
         setEditIndex(null);
         dispatch(saveProject(updatedProjects));
       } else {
-        setProjectList([...projectList, { ...project }]);
+        setProjectList([...projectState, project ]);
         setEditMode(false);
-        dispatch(saveProject([...projectList, { ...project }]));
+        dispatch(saveProject([...projectState, project ]));
       }
     
   };
@@ -137,7 +137,7 @@ const Projects = ({ edit }) => {
                 type="text"
                 name="description"
                 value={project.description}
-                onChange={e => setProject ({...project, project: e.target.value}) }
+                onChange={e => setProject ({...project, description: e.target.value}) }
                 
               />
 

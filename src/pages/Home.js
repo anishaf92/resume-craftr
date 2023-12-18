@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import '../css/home.css';
-import { saveProfile } from "../reducers/profileReducer";
-import { saveAboutMe } from "../reducers/aboutMeReducer";
-import { saveAcademic } from "../reducers/academicReducer";
-import { saveExperience } from "../reducers/experienceReducer";
-import { saveProject } from "../reducers/projectReducer";
-import { saveSkill } from "../reducers/skillReducer";
+import { resetExperience } from '../reducers/experienceReducer';
+import { resetProfile } from "../reducers/profileReducer";
+import { resetAboutMe } from "../reducers/aboutMeReducer";
+import { resetAcademic } from "../reducers/academicReducer";
+import { resetProject } from "../reducers/projectReducer";
+import { resetSkills } from "../reducers/skillReducer";
+
 import { useDispatch } from 'react-redux';
 
 const Home = props => {
@@ -14,12 +15,12 @@ const Home = props => {
   const [resumeList,setResumeList] = useState([])
   const dispatch = useDispatch();
   const addResume = () => {
-      dispatch(saveProfile(""));
-      dispatch(saveAboutMe(""));
-      dispatch(saveAcademic([]));
-      dispatch(saveExperience([]));
-      dispatch(saveProject([]));
-      dispatch(saveSkill([]));
+    dispatch(resetProfile());
+    dispatch(resetAboutMe());
+    dispatch(resetAcademic());
+    dispatch(resetExperience());
+    dispatch(resetProject());
+    dispatch(resetSkills());
     navigate ('/addResume');
   };
   useEffect(() => {

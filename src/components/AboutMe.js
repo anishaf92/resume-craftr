@@ -11,13 +11,6 @@ const AboutMe = ({edit, data}) => {
   });
   const dispatch = useDispatch ();
   const aboutMeText = useSelector (state => state.aboutMe);
-  useEffect (
-    () => {
-      console.log(aboutMeText)
-      setAboutMe (aboutMeText);
-    },
-    [editMode]
-  );
   const validate =() =>{
     console.log(aboutMe)
     if(aboutMe === ""){
@@ -28,7 +21,7 @@ const AboutMe = ({edit, data}) => {
 
   const handleSave = () => {
     if(validate()){
-    dispatch (saveAboutMe (aboutMe));
+    dispatch (saveAboutMe(aboutMe));
     setEditMode (false);
     }
     else{
@@ -45,8 +38,9 @@ const AboutMe = ({edit, data}) => {
             <div className="input-container">
               <label>Tell us about yourself:</label>
               <textarea
-                onChange={e => setAboutMe (e.target.value)}
-                value={aboutMe}
+              value={aboutMe.aboutMeText}
+                onChange={e => setAboutMe({aboutMeText: e.target.value})}
+                
               />
             </div>
             <footer>
@@ -60,7 +54,7 @@ const AboutMe = ({edit, data}) => {
                 <FontAwesomeIcon icon={faPen} />
               </span>
             </header>
-            <p className="details-display profile">{aboutMe.aboutMeText}</p>
+            <p className="details-display profile">{aboutMeText.aboutMeText}</p>
           </div>}
     </div>
   );

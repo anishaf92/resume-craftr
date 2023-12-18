@@ -16,7 +16,7 @@ export const resetExperience = () => ({
         };
         case 'RESET_EXP':
       return initialState;
-      // Handle other actions if needed
+    
       default:
         return state;
     }

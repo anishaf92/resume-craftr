@@ -7,12 +7,12 @@ import Academics from "../components/Academics";
 import ProfessionalExperience from "../components/ProfessionalExperience";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
-import { saveProfile } from "../reducers/profileReducer";
-import { saveAboutMe } from "../reducers/aboutMeReducer";
-import { saveAcademic } from "../reducers/academicReducer";
+import { resetProfile, saveProfile } from "../reducers/profileReducer";
+import { resetAboutMe, saveAboutMe } from "../reducers/aboutMeReducer";
+import { resetAcademic, saveAcademic } from "../reducers/academicReducer";
 import { saveExperience } from "../reducers/experienceReducer";
-import { saveProject } from "../reducers/projectReducer";
-import { saveSkill } from "../reducers/skillReducer";
+import { resetProject, saveProject } from "../reducers/projectReducer";
+import { resetSkills, saveSkill } from "../reducers/skillReducer";
 import { resetExperience } from "../reducers/experienceReducer";
 
 const ViewResume = (props) => {  
@@ -44,12 +44,12 @@ const ViewResume = (props) => {
 
     return () => {
         // Dispatch actions to reset relevant parts of the state
-        dispatch(saveProfile(""));
-        dispatch(saveAboutMe(""));
-        dispatch(saveAcademic([]));
+        dispatch(resetProfile());
+        dispatch(resetAboutMe());
+        dispatch(resetAcademic());
         dispatch(resetExperience());
-        dispatch(saveProject([]));
-        dispatch(saveSkill([]));
+        dispatch(resetProject());
+        dispatch(resetSkills());
       };
   },[id]) 
   const deleteResume = async () => {
@@ -68,11 +68,11 @@ const ViewResume = (props) => {
         try {
           const updatedData = {
             profile: resumeGlobal.profile,
-      aboutMe: { aboutMeText: resumeGlobal.aboutMe.aboutMeText },
-      academics: { academics: resumeGlobal.academics.academics },
+      aboutMe: resumeGlobal.aboutMe ,
+      academics: resumeGlobal.academics ,
       experience: resumeGlobal.experience,
       projects: resumeGlobal.projects,
-      skills: { skills: resumeGlobal.skills.skills },
+      skills: resumeGlobal.skills,
           };
       
           await fetch(`/api/${id}`, {

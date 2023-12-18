@@ -4,7 +4,11 @@ export const saveProfile = profileData => ({
   type: SAVE_PROFILE,
   payload: profileData,
 });
+export const RESET_PROFILE = 'RESET_PROFILE';
 
+export const resetProfile = () => ({
+  type: RESET_PROFILE,
+});
 const profileInitialState = {
   fullName: '',
   designation: '',
@@ -21,6 +25,8 @@ export const profileReducer = (state = profileInitialState, action) => {
         ...state,
         ...action.payload,
       };
+      case 'RESET_PROFILE':
+      return profileInitialState;
     default:
       return state;
   }

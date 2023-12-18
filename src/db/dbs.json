@@ -3,42 +3,370 @@
     {
       "resume": {
         "profile": {
-          "fullName": "Mohamed Siddique",
-          "designation": "Manage",
-          "email": "sidm4u@gmail.com",
-          "phone": "9994577657",
-          "location": "Trichy",
-          "website": "www.nimiracademy.com"
+          "fullName": "Anisha Fathima",
+          "designation": "Coding teacher",
+          "email": "ani@gmail.com",
+          "phone": "9894623878",
+          "location": "Chennai",
+          "website": ""
         },
         "aboutMe": {
-          "aboutMeText": "bwqdgqwidaskasbkbcaskc"
+          "0": "I",
+          "1": "n",
+          "2": "n",
+          "3": "o",
+          "4": "v",
+          "5": "a",
+          "6": "t",
+          "7": "i",
+          "8": "v",
+          "9": "e",
+          "10": " ",
+          "11": "a",
+          "12": "n",
+          "13": "d",
+          "14": " ",
+          "15": "h",
+          "16": "a",
+          "17": "r",
+          "18": "d",
+          "19": "w",
+          "20": "o",
+          "21": "r",
+          "22": "k",
+          "23": "i",
+          "24": "n",
+          "25": "g",
+          "26": " ",
+          "27": "i",
+          "28": "n",
+          "29": "d",
+          "30": "i",
+          "31": "v",
+          "32": "i",
+          "33": "d",
+          "34": "u",
+          "35": "a",
+          "36": "l",
+          "37": " ",
+          "38": "w",
+          "39": "i",
+          "40": "t",
+          "41": "h",
+          "42": " ",
+          "43": "e",
+          "44": "x",
+          "45": "p",
+          "46": "e",
+          "47": "r",
+          "48": "i",
+          "49": "e",
+          "50": "n",
+          "51": "c",
+          "52": "e",
+          "53": " ",
+          "54": "i",
+          "55": "n",
+          "56": " ",
+          "57": "t",
+          "58": "e",
+          "59": "a",
+          "60": "c",
+          "61": "h",
+          "62": "i",
+          "63": "n",
+          "64": "g",
+          "65": ",",
+          "66": " ",
+          "67": "c",
+          "68": "u",
+          "69": "r",
+          "70": "r",
+          "71": "e",
+          "72": "n",
+          "73": "t",
+          "74": "l",
+          "75": "y",
+          "76": " ",
+          "77": "s",
+          "78": "e",
+          "79": "e",
+          "80": "k",
+          "81": "i",
+          "82": "n",
+          "83": "g",
+          "84": " ",
+          "85": "f",
+          "86": "o",
+          "87": "r",
+          "88": " ",
+          "89": "t",
+          "90": "h",
+          "91": "e",
+          "92": " ",
+          "93": "r",
+          "94": "o",
+          "95": "l",
+          "96": "e",
+          "97": " ",
+          "98": "o",
+          "99": "f",
+          "100": " ",
+          "101": "f",
+          "102": "u",
+          "103": "l",
+          "104": "l",
+          "105": " ",
+          "106": "s",
+          "107": "t",
+          "108": "a",
+          "109": "c",
+          "110": "k",
+          "111": " ",
+          "112": "d",
+          "113": "e",
+          "114": "v",
+          "115": "e",
+          "116": "l",
+          "117": "o",
+          "118": "p",
+          "119": "e",
+          "120": "r",
+          "121": ",",
+          "122": " ",
+          "123": "r",
+          "124": "e",
+          "125": "s",
+          "126": "p",
+          "127": "o",
+          "128": "n",
+          "129": "s",
+          "130": "i",
+          "131": "b",
+          "132": "l",
+          "133": "e",
+          "134": " ",
+          "135": "f",
+          "136": "o",
+          "137": "r",
+          "138": " ",
+          "139": "d",
+          "140": "e",
+          "141": "s",
+          "142": "i",
+          "143": "g",
+          "144": "n",
+          "145": "i",
+          "146": "n",
+          "147": "g",
+          "148": ",",
+          "149": " ",
+          "150": "d",
+          "151": "e",
+          "152": "v",
+          "153": "e",
+          "154": "l",
+          "155": "o",
+          "156": "p",
+          "157": "i",
+          "158": "n",
+          "159": "g",
+          "160": " ",
+          "161": "a",
+          "162": "n",
+          "163": "d",
+          "164": " ",
+          "165": "t",
+          "166": "e",
+          "167": "s",
+          "168": "t",
+          "169": "i",
+          "170": "n",
+          "171": "g",
+          "172": " ",
+          "173": "r",
+          "174": "e",
+          "175": "s",
+          "176": "p",
+          "177": "o",
+          "178": "n",
+          "179": "s",
+          "180": "i",
+          "181": "v",
+          "182": "e",
+          "183": " ",
+          "184": "w",
+          "185": "e",
+          "186": "b",
+          "187": " ",
+          "188": "a",
+          "189": "p",
+          "190": "p",
+          "191": "l",
+          "192": "i",
+          "193": "c",
+          "194": "a",
+          "195": "t",
+          "196": "i",
+          "197": "o",
+          "198": "n",
+          "199": "s",
+          "200": " ",
+          "201": "t",
+          "202": "h",
+          "203": "a",
+          "204": "t",
+          "205": " ",
+          "206": "m",
+          "207": "e",
+          "208": "e",
+          "209": "t",
+          "210": "s",
+          "211": " ",
+          "212": "t",
+          "213": "h",
+          "214": "e",
+          "215": " ",
+          "216": "c",
+          "217": "l",
+          "218": "i",
+          "219": "e",
+          "220": "n",
+          "221": "t",
+          "222": " ",
+          "223": "n",
+          "224": "e",
+          "225": "e",
+          "226": "d",
+          "227": "s",
+          "228": ".",
+          "aboutMeText": "Innovative and hardworking individual with experience in teaching, currently seeking for the role of full stack developer, responsible for designing, developing and testing responsive web applications that meets the client needs."
         },
         "academics": {
           "academics": [
             {
-              "degree": "BE",
-              "schoolname": "Anna University",
-              "specialization": "EEE",
-              "start": "2004-05-05",
-              "end": "2008-05-05",
-              "description": "dbdbwhdbhsbd,sdbdad"
+              "degree": "Btech",
+              "schoolname": "SASTRA",
+              "specialization": "CSE",
+              "start": "2009-04-01",
+              "end": "2013-05-04",
+              "description": "Studies DSA , OS , Grid computing and JAVA"
+            },
+            {
+              "degree": "Mtech",
+              "schoolname": "IIM",
+              "specialization": "CSE",
+              "start": "",
+              "end": "",
+              "description": ""
             }
           ]
         },
         "experience": {
-          "experience": {
-            "experience": []
-          }
+          "experience": [
+            {
+              "designation": "Teacher",
+              "companyName": "Whitehat Junior",
+              "location": "Remote",
+              "start": "2019-06-12",
+              "end": "2022-05-22",
+              "description": "Mentored students in python , ML and AI"
+            },
+            {
+              "designation": "Associate SE",
+              "companyName": "Accenture",
+              "location": "Chennai",
+              "start": "",
+              "end": "",
+              "description": ""
+            }
+          ]
         },
         "projects": {
           "projects": {
-            "projects": []
+            "projects": {
+              "projects": [
+                {
+                  "title": "Schoolcool",
+                  "url": "https://app.netlify.com/sites/gentle-snickerdoodle-a87926/overview",
+                  "skills": "React Js, Node js , Mongo DB",
+                  "start": "2023-10-29",
+                  "end": "2023-11-29",
+                  "description": "School Management Web application",
+                  "project": "s"
+                }
+              ]
+            }
           }
         },
         "skills": {
           "skills": [
             {
-              "skillname": "jss",
+              "skillname": "React js",
+              "rating": "4"
+            },
+            {
+              "skillname": "Node js",
+              "rating": "2"
+            }
+          ]
+        }
+      },
+      "id": 1
+    },
+    {
+      "resume": {
+        "profile": {
+          "fullName": "Mohamed Siddique",
+          "designation": "Manager",
+          "email": "sidm4u@gmail.com",
+          "phone": "9894623878",
+          "location": "Chennai",
+          "website": ""
+        },
+        "aboutMe": {
+          "aboutMeText": "Innovative and hardworking individual with experience in teaching, currently seeking for the role of full stack developer, responsible for designing, developing and testing responsive web applications that meets the client needs."
+        },
+        "academics": {
+          "academics": [
+            {
+              "degree": "BE",
+              "schoolname": "Anna university",
+              "specialization": "EEE",
+              "start": "",
+              "end": "",
+              "description": ""
+            }
+          ]
+        },
+        "experience": {
+          "experience": [
+            {
+              "designation": "Manager",
+              "companyName": "Rudoom",
+              "location": "Muscat",
+              "start": "",
+              "end": "",
+              "description": ""
+            }
+          ]
+        },
+        "projects": {
+          "projects": [
+            {
+              "title": "Artify",
+              "url": "",
+              "skills": "HTML , CSS , JS",
+              "start": "",
+              "end": "",
+              "description": ""
+            }
+          ]
+        },
+        "skills": {
+          "skills": [
+            {
+              "skillname": "React js",
               "rating": "4"
             }
           ]

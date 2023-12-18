@@ -2,6 +2,12 @@ const initialState = {
   academics: []
 };
 
+export const RESET_ACADEMIC = 'RESET_ACADEMIC';
+
+
+export const resetAcademic = () => ({
+  type: RESET_ACADEMIC,
+});
 export default function academicReducer (state = initialState, action) {
   console.log ('Current State:', state);
   console.log ('Action:', action);
@@ -12,6 +18,8 @@ export default function academicReducer (state = initialState, action) {
           ...state,
           academics:action.payload,
         };
+        case 'RESET_ACADEMIC':
+      return initialState;
       
     // Handle other actions if needed
     default:

@@ -27,7 +27,7 @@ const Profile = ({edit, data}) => {
   );
   const validate =() =>{
     
-    if(profile.fullName === "" || profile.designation === "" || profile.email === "" || profile.phone === ""){
+    if(profileData.fullName === "" && profileData.designation === "" && profileData.email === "" && profileData.phone === ""){
       return false
     }
     return true
