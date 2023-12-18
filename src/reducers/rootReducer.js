@@ -7,11 +7,11 @@ import experienceReducer from './experienceReducer';
 import projectReducer from "./projectReducer";
 import {v4 as uuidv4} from 'uuid';
 const generateResumeId = () => uuidv4 ();
-
+const resumeId = generateResumeId();
 
 
 const rootReducer = combineReducers ({
-  resumeId: generateResumeId (),
+  resumeId,
   profile: profileReducer,
   aboutMe: aboutMeReducer,
   academics: academicReducer,

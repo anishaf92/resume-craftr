@@ -10,7 +10,7 @@ import { saveProject } from '../reducers/projectReducer';
 const Projects = ({ edit }) => {
   const [editMode, setEditMode] = useState(edit);
   const [projectList, setProjectList] = useState([]);
-  const projectState = useSelector (state => state.projects.projects.projects.projects);
+  const projectState = useSelector (state => state.projects.projects);
   const [project, setProject] = useState({
     title: '',
     url: '',
@@ -42,19 +42,19 @@ const Projects = ({ edit }) => {
   };
 
   const handleSave = () => {
-    if (editIndex !== null) {
-
-      const updatedProjects = [...projectList];
-      updatedProjects[editIndex] = project;
-      setProjectList(updatedProjects);
-      setEditMode(false);
-      setEditIndex(null);
-      dispatch(saveProject(updatedProjects));
-    } else {
-      setProjectList([...projectState, project]);
-      setEditMode(false);
-      dispatch(saveProject([...projectState, project]));
-    }
+      if (editIndex !== null) {
+        const updatedProjects = [...projectList];
+        updatedProjects[editIndex] = { ...project };
+        setProjectList(updatedProjects);
+        setEditMode(false);
+        setEditIndex(null);
+        dispatch(saveProject(updatedProjects));
+      } else {
+        setProjectList([...projectList, { ...project }]);
+        setEditMode(false);
+        dispatch(saveProject([...projectList, { ...project }]));
+      }
+    
   };
 
   const handleEdit = (index) => {

@@ -9,7 +9,7 @@ import { saveExperience } from '../reducers/experienceReducer';
 const ProfessionalExperience = ({ edit }) => {
   const [editMode, setEditMode] = useState(edit);
   const [experienceList, setExperienceList] = useState([]);
-  const experienceState = useSelector (state => state.experience.experience.experience.experience);
+  const experienceState = useSelector (state => state.experience.experience);
   const [experience, setExperience] = useState({
     designation: '',
     companyName: '',
@@ -41,22 +41,34 @@ const ProfessionalExperience = ({ edit }) => {
   };
 
   const handleSave = () => {
+    if(validate()){
     if (editIndex !== null) {
-      const updatedAcademics = [...experienceList];
-      updatedAcademics[editIndex] = experience;
-      setExperienceList(updatedAcademics);
+      const updatedExperience = [...experienceState];
+      updatedExperience[editIndex] = experience;
+      setExperienceList(updatedExperience);
       setEditMode(false);
       setEditIndex(null);
-      dispatch(saveExperience(updatedAcademics));
+      dispatch(saveExperience(updatedExperience));
     } else {
       setExperienceList([...experienceState, experience]);
       setEditMode(false);
       dispatch(saveExperience([...experienceState, experience]));
     }
+  }
+  else{
+    alert("Please enter all the mandatory fields")
+  }
   };
+  const validate =() =>{
+    
+    if(experience.designation === "" || experience.companyName === "" || experience.location === ""){
+      return false
+    }
+    return true
+  }
 
   const handleEdit = (index) => {
-    setExperience(experienceList[index]);
+    setExperience(experienceState[index]);
     setEditMode(true);
     setEditIndex(index);
   };
@@ -85,7 +97,7 @@ const ProfessionalExperience = ({ edit }) => {
               </span>
             </header>
             <div className="input-container">
-              <label>Designation: </label>
+              <label>Designation: * </label>
               <input
                 type="text"
                 name="designation"
@@ -94,7 +106,7 @@ const ProfessionalExperience = ({ edit }) => {
               />
             </div>
             <div className="input-container">
-              <label>Organisation name: </label>
+              <label>Organisation name:* </label>
               <input
                 type="text"
                 name="companyName"
@@ -103,7 +115,7 @@ const ProfessionalExperience = ({ edit }) => {
               />
             </div>
             <div className="input-container">
-              <label>Location: </label>
+              <label>Location:* </label>
               <input
                 type="text"
                 name="location"

@@ -25,14 +25,27 @@ const Profile = ({edit, data}) => {
     },
     [editMode]
   );
+  const validate =() =>{
+    
+    if(profile.fullName === "" || profile.designation === "" || profile.email === "" || profile.phone === ""){
+      return false
+    }
+    return true
+  }
+  
   const handleInputChange = e => {
     const {name, value} = e.target;
     setProfileData (prevData => ({...prevData, [name]: value}));
   };
   const handleSave = () => {
+    if(validate()){
     console.log (profileData);
     dispatch (saveProfile (profileData));
     setEditMode (false);
+    }
+    else{
+      alert("Please enter all the mandatory fields")
+    }
   };
   return (
     <div>

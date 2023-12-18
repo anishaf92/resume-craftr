@@ -34,13 +34,14 @@ const Skills = ({ edit }) => {
 
   const handleSave = () => {
     if (editIndex !== null) {
-      const updatedSkills = [...skillsList];
+      const updatedSkills = [...skillState];
       updatedSkills[editIndex] = skill;
       setSkillsList(updatedSkills);
       setEditMode(false);
       setEditIndex(null);
       dispatch(saveSkill(updatedSkills));
     } else {
+
       setSkillsList([...skillState, skill]);
       setEditMode(false);
       dispatch(saveSkill([...skillState, skill]));
@@ -59,6 +60,7 @@ const Skills = ({ edit }) => {
     setSkillsList(updatedSkills);
     setEditMode(false);
     setEditIndex(null);
+    dispatch(saveSkill(skillsList));
   };
 
   return (

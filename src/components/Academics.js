@@ -26,6 +26,13 @@ const Academics = ({ edit }) => {
     },
     [editMode]
   );
+  const validate =() =>{
+    
+    if(academics.degree === "" || academics.schoolname === "" || academics.specialization === ""){
+      return false
+    }
+    return true
+  }
   const addAcademic = () => {
     setEditMode(true);
     setAcademics({
@@ -40,7 +47,7 @@ const Academics = ({ edit }) => {
   };
 
   const handleSave = () => {
-
+    if(validate()){
     if (editIndex !== null) {
       const updatedAcademics = [...academicsList];
       updatedAcademics[editIndex] = academics;
@@ -53,6 +60,10 @@ const Academics = ({ edit }) => {
       setEditMode(false);
       dispatch(saveAcademic([...academicsList, academics]));
     }
+}
+else{
+    alert("Please enter all the mandatory details")
+}
   };
 
   const handleEdit = (index) => {
@@ -85,7 +96,7 @@ const Academics = ({ edit }) => {
               </span>
             </header>
             <div className="input-container">
-              <label>Degree/course: </label>
+              <label>Degree/course:* </label>
               <input
                 type="text"
                 name="degree"
@@ -94,7 +105,7 @@ const Academics = ({ edit }) => {
               />
             </div>
             <div className="input-container">
-              <label>School/ College name: </label>
+              <label>School/ College name:* </label>
               <input
                 type="text"
                 name="schoolname"
@@ -103,7 +114,7 @@ const Academics = ({ edit }) => {
               />
             </div>
             <div className="input-container">
-              <label>Specialization: </label>
+              <label>Specialization:* </label>
               <input
                 type="text"
                 name="specialization"

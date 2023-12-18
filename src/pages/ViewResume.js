@@ -13,6 +13,7 @@ import { saveAcademic } from "../reducers/academicReducer";
 import { saveExperience } from "../reducers/experienceReducer";
 import { saveProject } from "../reducers/projectReducer";
 import { saveSkill } from "../reducers/skillReducer";
+import { resetExperience } from "../reducers/experienceReducer";
 
 const ViewResume = (props) => {  
   const resumeGlobal = useSelector(state => state);
@@ -23,13 +24,16 @@ const ViewResume = (props) => {
     try {
       const response = await fetch(`/api/${id}`);
       const data = await response.json();
-  
+      console.log(data.resume)
+      console.log(resumeGlobal)
+      if(data.resume !== resumeGlobal){
       dispatch(saveProfile(data.resume.profile));
       dispatch(saveAboutMe(data.resume.aboutMe.aboutMeText));
       dispatch(saveAcademic(data.resume.academics.academics));
-      dispatch(saveExperience(data.resume.experience));
+      dispatch(saveExperience(data.resume.experience.experience));
       dispatch(saveProject(data.resume.projects));
       dispatch(saveSkill(data.resume.skills.skills));
+      }
     } catch (error) {
       console.error("Error fetching data:", error);
       // Handle error (e.g., show an error message to the user)
@@ -37,9 +41,17 @@ const ViewResume = (props) => {
 }
   useEffect(() => {
     fetchData()
-    
-     
-  },[]) 
+
+    return () => {
+        // Dispatch actions to reset relevant parts of the state
+        dispatch(saveProfile(""));
+        dispatch(saveAboutMe(""));
+        dispatch(saveAcademic([]));
+        dispatch(resetExperience());
+        dispatch(saveProject([]));
+        dispatch(saveSkill([]));
+      };
+  },[id]) 
   const deleteResume = async () => {
     try{
         fetch(`/api/${id}`, {
@@ -53,29 +65,34 @@ const ViewResume = (props) => {
     }
   }
   const saveChanges = async () => {
-    try {
-      await fetch(`/api/${id}`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({resume :resumeGlobal}),
-      });
-      dispatch(saveProfile(""));
-      dispatch(saveAboutMe(""));
-      dispatch(saveAcademic([]));
-      dispatch(saveExperience([]));
-      dispatch(saveProject([]));
-      dispatch(saveSkill([]));
-      navigate("/");
-    } catch (error) {
-      console.error("Error saving changes:", error);
-      // Handle error (e.g., show an error message to the user)
-    }
+        try {
+          const updatedData = {
+            profile: resumeGlobal.profile,
+      aboutMe: { aboutMeText: resumeGlobal.aboutMe.aboutMeText },
+      academics: { academics: resumeGlobal.academics.academics },
+      experience: resumeGlobal.experience,
+      projects: resumeGlobal.projects,
+      skills: { skills: resumeGlobal.skills.skills },
+          };
+      
+          await fetch(`/api/${id}`, {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ resume: updatedData }),
+          });
+      
+          navigate("/");
+        } catch (error) {
+          console.error("Error saving changes:", error);
+          // Handle error (e.g., show an error message to the user)
+        }
+      
   };
   return (
     <div>
-        {console.log(resumeGlobal)}
+        
         <Profile edit={false}  /> 
       <AboutMe edit={false} /> 
        <Academics edit={false} />

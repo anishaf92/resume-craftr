@@ -6,9 +6,11 @@ import {faPen} from '@fortawesome/free-solid-svg-icons';
 
 const AboutMe = ({edit, data}) => {
   const [editMode, setEditMode] = useState (edit);
-  const [aboutMe, setAboutMe] = useState ('');
+  const [aboutMe, setAboutMe] = useState ({
+    aboutMeText:""
+  });
   const dispatch = useDispatch ();
-  const aboutMeText = useSelector (state => state.aboutMe.aboutMeText);
+  const aboutMeText = useSelector (state => state.aboutMe);
   useEffect (
     () => {
       console.log(aboutMeText)
@@ -16,10 +18,22 @@ const AboutMe = ({edit, data}) => {
     },
     [editMode]
   );
+  const validate =() =>{
+    console.log(aboutMe)
+    if(aboutMe === ""){
+      return false
+    }
+    return true
+  }
 
   const handleSave = () => {
+    if(validate()){
     dispatch (saveAboutMe (aboutMe));
     setEditMode (false);
+    }
+    else{
+      alert("Please Enter all the details to continue")
+    }
   };
 
   return (
@@ -46,7 +60,7 @@ const AboutMe = ({edit, data}) => {
                 <FontAwesomeIcon icon={faPen} />
               </span>
             </header>
-            <p className="details-display profile">{aboutMe}</p>
+            <p className="details-display profile">{aboutMe.aboutMeText}</p>
           </div>}
     </div>
   );

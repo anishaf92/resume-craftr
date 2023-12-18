@@ -3,75 +3,48 @@
     {
       "resume": {
         "profile": {
-          "fullName": "Anisha Fathimaa",
-          "designation": "Coding Teacher",
-          "email": "anisha92@gmail.com",
-          "phone": "9894623878",
-          "location": "Chennai , Tamil Nadu ",
-          "website": ""
+          "fullName": "Mohamed Siddique",
+          "designation": "Manage",
+          "email": "sidm4u@gmail.com",
+          "phone": "9994577657",
+          "location": "Trichy",
+          "website": "www.nimiracademy.com"
         },
         "aboutMe": {
-          "aboutMeText": "Innovative and hardworking individual with experience in teaching, currently seeking for the role of full stack developer, responsible for designing, developing and testing responsive web applications that meets the client needs."
+          "aboutMeText": "bwqdgqwidaskasbkbcaskc"
         },
         "academics": {
           "academics": [
             {
-              "degree": "Btech",
-              "schoolname": "Sastra",
-              "specialization": "CSE",
-              "start": "2009-07-02",
-              "end": "2013-04-23",
-              "description": "Done specialization in Computer science"
+              "degree": "BE",
+              "schoolname": "Anna University",
+              "specialization": "EEE",
+              "start": "2004-05-05",
+              "end": "2008-05-05",
+              "description": "dbdbwhdbhsbd,sdbdad"
             }
           ]
         },
         "experience": {
           "experience": {
-            "experience": {
-              "experience": [
-                {
-                  "designation": "Coding Teacher",
-                  "companyName": "Whitehat Junior",
-                  "location": "Chennai",
-                  "start": "2019-03-04",
-                  "end": "2022-05-31",
-                  "description": "Mentored students in python , ML"
-                }
-              ]
-            }
+            "experience": []
           }
         },
         "projects": {
           "projects": {
-            "projects": {
-              "projects": [
-                {
-                  "title": "School Cool",
-                  "url": "",
-                  "skills": "React , Node",
-                  "start": "",
-                  "end": "2023-12-31",
-                  "description": "",
-                  "project": "C"
-                }
-              ]
-            }
+            "projects": []
           }
         },
         "skills": {
           "skills": [
             {
-              "skillname": "React",
+              "skillname": "jss",
               "rating": "4"
-            },
-            {
-              "skillname": "Node",
-              "rating": "2"
             }
           ]
         }
       },
-      "id": 1
+      "id": 2
     }
   ]
 }
