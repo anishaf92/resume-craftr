@@ -1,0 +1,68 @@
+.button-pos {
+    display: flex;
+    
+    justify-content: center;
+    padding: 10px;
+}
+
+button {
+    height: 2rem;
+    padding: 6px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: 2px 4px gray;
+    color: black;
+    margin:10px;
+    font-weight: bold;
+    background-color: transparent;
+
+}
+.btn{
+    height: 2rem;
+    width:fit-content;
+    margin:10px;
+    padding: 6px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: 2px 4px  rgba(0, 0, 0, 0.2);
+    color: black;
+    background-color: transparent;
+    
+}
+.button-block{
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  .home-container{
+    display: flex;
+    justify-content:center ;
+  }
+  .card-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:40px;
+  }
+  button.addResume{
+    text-align: center;
+  }
+  
