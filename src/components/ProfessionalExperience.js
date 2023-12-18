@@ -9,7 +9,7 @@ import { saveExperience } from '../reducers/experienceReducer';
 const ProfessionalExperience = ({ edit }) => {
   const [editMode, setEditMode] = useState(edit);
   const [experienceList, setExperienceList] = useState([]);
-  const experienceState = useSelector (state => state.experience.experience);
+  const experienceState = useSelector (state => state.experience.experience.experience.experience);
   const [experience, setExperience] = useState({
     designation: '',
     companyName: '',

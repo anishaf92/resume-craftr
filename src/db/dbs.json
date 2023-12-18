@@ -27,31 +27,35 @@
         },
         "experience": {
           "experience": {
-            "experience": [
-              {
-                "designation": "Coding Teacher",
-                "companyName": "Whitehat Junior",
-                "location": "Chennai",
-                "start": "2019-03-04",
-                "end": "2022-05-31",
-                "description": "Mentored students in python , ML"
-              }
-            ]
+            "experience": {
+              "experience": [
+                {
+                  "designation": "Coding Teacher",
+                  "companyName": "Whitehat Junior",
+                  "location": "Chennai",
+                  "start": "2019-03-04",
+                  "end": "2022-05-31",
+                  "description": "Mentored students in python , ML"
+                }
+              ]
+            }
           }
         },
         "projects": {
           "projects": {
-            "projects": [
-              {
-                "title": "School Cool",
-                "url": "",
-                "skills": "React , Node",
-                "start": "",
-                "end": "2023-12-31",
-                "description": "",
-                "project": "C"
-              }
-            ]
+            "projects": {
+              "projects": [
+                {
+                  "title": "School Cool",
+                  "url": "",
+                  "skills": "React , Node",
+                  "start": "",
+                  "end": "2023-12-31",
+                  "description": "",
+                  "project": "C"
+                }
+              ]
+            }
           }
         },
         "skills": {

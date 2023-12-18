@@ -46,7 +46,7 @@ const AboutMe = ({edit, data}) => {
                 <FontAwesomeIcon icon={faPen} />
               </span>
             </header>
-            <p className="details-display profile">{aboutMe.aboutMeText}</p>
+            <p className="details-display profile">{aboutMe}</p>
           </div>}
     </div>
   );

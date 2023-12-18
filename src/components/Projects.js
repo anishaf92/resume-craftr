@@ -10,7 +10,7 @@ import { saveProject } from '../reducers/projectReducer';
 const Projects = ({ edit }) => {
   const [editMode, setEditMode] = useState(edit);
   const [projectList, setProjectList] = useState([]);
-  const projectState = useSelector (state => state.projects.projects);
+  const projectState = useSelector (state => state.projects.projects.projects.projects);
   const [project, setProject] = useState({
     title: '',
     url: '',
