@@ -11,7 +11,7 @@ Please follow the instructions to set it up.
 3. Delete resume
 4. Save multiple resumes in your application
 
-[Working Demo](https://657fcb4c66e83a6b762b5d18--jolly-flan-ce3f71.netlify.app/)
+[Working Demo](https://jolly-flan-ce3f71.netlify.app/)
 
 ### Instructions :
 
